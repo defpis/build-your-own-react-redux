@@ -1,0 +1,9 @@
+# third packages
+node_modules
+# plugin configs
+.eslintrc.js
+.prettierrc.js
+webpack.config.js
+# build outputs
+build
+dist

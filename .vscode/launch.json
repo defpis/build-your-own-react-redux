@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Mocha Test",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+      "args": [
+        "--timeout",
+        "0",
+        "--reporter",
+        "spec",
+        "--require",
+        "ts-node/register",
+        "${workspaceFolder}/test/**/*.spec.ts",
+        "--watch",
+        "--watch-files",
+        "${workspaceFolder}/src/**/*.ts, ${workspaceFolder}/test/**/*.ts"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Node Debug",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceRoot}/src"]
+    },
+    {
+      "name": "Chrome Debug",
+      "type": "chrome",
+      "request": "launch",
+      "webRoot": "${workspaceFolder}",
+      "url": "http://localhost:8080"
+    }
+  ]
+}
