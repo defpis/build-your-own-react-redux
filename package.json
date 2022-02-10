@@ -29,7 +29,7 @@
     "fibers": "^4.0.2",
     "html-webpack-plugin": "^4.2.0",
     "mocha": "^7.1.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.0.4",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
